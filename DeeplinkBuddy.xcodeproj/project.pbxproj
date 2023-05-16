@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47105050291167CD009AAA3C /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 4710504F291167CD009AAA3C /* RevenueCat */; };
+		4710505229116830009AAA3C /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710505129116830009AAA3C /* PurchaseManager.swift */; };
+		4710505629116A01009AAA3C /* StoreKitConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 47105055291169F9009AAA3C /* StoreKitConfiguration.storekit */; };
+		4710505829116A43009AAA3C /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4710505729116A43009AAA3C /* StoreKitTestCertificate.cer */; };
+		4762F23928EC4A12007251C6 /* SimulatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23828EC4A12007251C6 /* SimulatorManager.swift */; };
+		4762F23B28EC4D5B007251C6 /* TargetDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23A28EC4D5B007251C6 /* TargetDeviceView.swift */; };
+		4766C5EF28D21A9200EBEEA1 /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */; };
+		47974D75290980F700968DE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47974D74290980F700968DE9 /* Preview Assets.xcassets */; };
+		47974D7B2909814300968DE9 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 47974D7A2909814300968DE9 /* Sparkle */; };
+		47974D7C2909814F00968DE9 /* iOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974D6329097B2D00968DE9 /* iOSContentView.swift */; };
+		47974D7D2909814F00968DE9 /* iOSSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974D6529097BA300968DE9 /* iOSSettingsView.swift */; };
+		47974D83290981AA00968DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FAC43E28D217D600972E4D /* Assets.xcassets */; };
+		47974D84290981B300968DE9 /* DeeplinkBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43928D217D500972E4D /* DeeplinkBuddy.xcdatamodeld */; };
+		47974D85290981CD00968DE9 /* AllDeeplinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43C28D217D500972E4D /* AllDeeplinksView.swift */; };
+		47974D86290981D700968DE9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43728D217D500972E4D /* Persistence.swift */; };
+		47974D87290981D900968DE9 /* DeeplinkBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43528D217D500972E4D /* DeeplinkBuddyApp.swift */; };
+		47974D88290981DC00968DE9 /* DeeplinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC44928D2183A00972E4D /* DeeplinkDetailView.swift */; };
+		47974D89290981DF00968DE9 /* QueryItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05128DB408800D49223 /* QueryItemsView.swift */; };
+		47974D8A290981E100968DE9 /* SchemeAndHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05328DB4ACD00D49223 /* SchemeAndHostView.swift */; };
+		47974D8B290981E300968DE9 /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */; };
+		47A1CDC52959622D00169E54 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 47A1CDC42959622D00169E54 /* Mixpanel */; };
+		47A1CDC72959646700169E54 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1CDC62959646700169E54 /* AnalyticsTracker.swift */; };
+		47A1CDC82959646700169E54 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1CDC62959646700169E54 /* AnalyticsTracker.swift */; };
+		47AD61E328EF44310054F38C /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD61E228EF44310054F38C /* MenuBarManager.swift */; };
+		47B7A05228DB408800D49223 /* QueryItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05128DB408800D49223 /* QueryItemsView.swift */; };
+		47B7A05428DB4ACD00D49223 /* SchemeAndHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05328DB4ACD00D49223 /* SchemeAndHostView.swift */; };
+		47BA90292936EC4C00CE9A86 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BA90282936EC4C00CE9A86 /* QRCodeGenerator.swift */; };
+		47BA902A2936EC4C00CE9A86 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BA90282936EC4C00CE9A86 /* QRCodeGenerator.swift */; };
+		47C8E89A28E4631F008DCCC9 /* CheckForUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C8E89928E4631F008DCCC9 /* CheckForUpdatesView.swift */; };
+		47C8E89C28E46C31008DCCC9 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C8E89B28E46C31008DCCC9 /* PreferencesView.swift */; };
+		47F3A641297B8BAB00CDFA1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F3A640297B8BAB00CDFA1C /* Preview Assets.xcassets */; };
+		47F3A646297B8BBB00CDFA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FAC43E28D217D600972E4D /* Assets.xcassets */; };
+		47F3A647297B8BE700CDFA1C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43728D217D500972E4D /* Persistence.swift */; };
+		47F3A648297B8BED00CDFA1C /* DeeplinkBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43528D217D500972E4D /* DeeplinkBuddyApp.swift */; };
+		47F3A649297B8BF000CDFA1C /* DeeplinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC44928D2183A00972E4D /* DeeplinkDetailView.swift */; };
+		47F3A64A297B8BF200CDFA1C /* AllDeeplinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43C28D217D500972E4D /* AllDeeplinksView.swift */; };
+		47F3A64B297B8BF400CDFA1C /* QueryItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05128DB408800D49223 /* QueryItemsView.swift */; };
+		47F3A64C297B8BF700CDFA1C /* SchemeAndHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05328DB4ACD00D49223 /* SchemeAndHostView.swift */; };
+		47F3A64D297B8BF900CDFA1C /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */; };
+		47F3A64E297B8BFC00CDFA1C /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BA90282936EC4C00CE9A86 /* QRCodeGenerator.swift */; };
+		47F3A64F297B8BFF00CDFA1C /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1CDC62959646700169E54 /* AnalyticsTracker.swift */; };
+		47F3A650297B8C0300CDFA1C /* DeeplinkBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43928D217D500972E4D /* DeeplinkBuddy.xcdatamodeld */; };
+		47F3A651297B8C0C00CDFA1C /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD61E228EF44310054F38C /* MenuBarManager.swift */; };
+		47F3A652297B8C0F00CDFA1C /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C8E89B28E46C31008DCCC9 /* PreferencesView.swift */; };
+		47F3A653297B8C1100CDFA1C /* TargetDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23A28EC4D5B007251C6 /* TargetDeviceView.swift */; };
+		47F3A654297B8C2700CDFA1C /* SimulatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23828EC4A12007251C6 /* SimulatorManager.swift */; };
+		47F3A657297B8CB000CDFA1C /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 47F3A656297B8CB000CDFA1C /* Mixpanel */; };
+		47F3A659297B8CB400CDFA1C /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 47F3A658297B8CB400CDFA1C /* TelemetryClient */; };
+		47F3A65B297B922100CDFA1C /* XcodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3A65A297B922100CDFA1C /* XcodeManager.swift */; };
+		47F3A65E297B9AB800CDFA1C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3A65D297B9AB800CDFA1C /* OnboardingView.swift */; };
+		47F6C6132976E06E00EAFC3B /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 47F6C6122976E06E00EAFC3B /* TelemetryClient */; };
+		47FAC43628D217D500972E4D /* DeeplinkBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43528D217D500972E4D /* DeeplinkBuddyApp.swift */; };
+		47FAC43828D217D500972E4D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43728D217D500972E4D /* Persistence.swift */; };
+		47FAC43B28D217D500972E4D /* DeeplinkBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43928D217D500972E4D /* DeeplinkBuddy.xcdatamodeld */; };
+		47FAC43D28D217D500972E4D /* AllDeeplinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43C28D217D500972E4D /* AllDeeplinksView.swift */; };
+		47FAC43F28D217D600972E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FAC43E28D217D600972E4D /* Assets.xcassets */; };
+		47FAC44328D217D600972E4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FAC44228D217D600972E4D /* Preview Assets.xcassets */; };
+		47FAC44A28D2183A00972E4D /* DeeplinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC44928D2183A00972E4D /* DeeplinkDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47F3A62F297B8B7F00CDFA1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4710505129116830009AAA3C /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		47105055291169F9009AAA3C /* StoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitConfiguration.storekit; sourceTree = "<group>"; };
+		4710505729116A43009AAA3C /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		4762F23828EC4A12007251C6 /* SimulatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorManager.swift; sourceTree = "<group>"; };
+		4762F23A28EC4D5B007251C6 /* TargetDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetDeviceView.swift; sourceTree = "<group>"; };
+		4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deeplink.swift; sourceTree = "<group>"; };
+		4766C5F028D2293400EBEEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47974D6329097B2D00968DE9 /* iOSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSContentView.swift; sourceTree = "<group>"; };
+		47974D6529097BA300968DE9 /* iOSSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSettingsView.swift; sourceTree = "<group>"; };
+		47974D6B290980F600968DE9 /* DeeplinkBuddyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeeplinkBuddyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47974D74290980F700968DE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47974D7E2909816700968DE9 /* DeeplinkBuddyMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeeplinkBuddyMobile.entitlements; sourceTree = "<group>"; };
+		47A1CDC62959646700169E54 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
+		47AD61E228EF44310054F38C /* MenuBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManager.swift; sourceTree = "<group>"; };
+		47B7A05128DB408800D49223 /* QueryItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryItemsView.swift; sourceTree = "<group>"; };
+		47B7A05328DB4ACD00D49223 /* SchemeAndHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeAndHostView.swift; sourceTree = "<group>"; };
+		47BA90282936EC4C00CE9A86 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		47C8E89928E4631F008DCCC9 /* CheckForUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesView.swift; sourceTree = "<group>"; };
+		47C8E89B28E46C31008DCCC9 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		47F3A637297B8BAA00CDFA1C /* Deeplink Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deeplink Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F3A640297B8BAB00CDFA1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47F3A642297B8BAB00CDFA1C /* DeeplinkBuddyMacAppStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeeplinkBuddyMacAppStore.entitlements; sourceTree = "<group>"; };
+		47F3A65A297B922100CDFA1C /* XcodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeManager.swift; sourceTree = "<group>"; };
+		47F3A65C297B985D00CDFA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47F3A65D297B9AB800CDFA1C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		47FAC43228D217D500972E4D /* Deeplink Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deeplink Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FAC43528D217D500972E4D /* DeeplinkBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkBuddyApp.swift; sourceTree = "<group>"; };
+		47FAC43728D217D500972E4D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		47FAC43A28D217D500972E4D /* DeeplinkBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeeplinkBuddy.xcdatamodel; sourceTree = "<group>"; };
+		47FAC43C28D217D500972E4D /* AllDeeplinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDeeplinksView.swift; sourceTree = "<group>"; };
+		47FAC43E28D217D600972E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47FAC44028D217D600972E4D /* DeeplinkBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeeplinkBuddy.entitlements; sourceTree = "<group>"; };
+		47FAC44228D217D600972E4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47FAC44928D2183A00972E4D /* DeeplinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47974D68290980F600968DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47105050291167CD009AAA3C /* RevenueCat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F3A634297B8BAA00CDFA1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F3A657297B8CB000CDFA1C /* Mixpanel in Frameworks */,
+				47F3A659297B8CB400CDFA1C /* TelemetryClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FAC42F28D217D500972E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A1CDC52959622D00169E54 /* Mixpanel in Frameworks */,
+				47F6C6132976E06E00EAFC3B /* TelemetryClient in Frameworks */,
+				47974D7B2909814300968DE9 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47974D6C290980F600968DE9 /* DeeplinkBuddyMobile */ = {
+			isa = PBXGroup;
+			children = (
+				47974D7E2909816700968DE9 /* DeeplinkBuddyMobile.entitlements */,
+				47974D6329097B2D00968DE9 /* iOSContentView.swift */,
+				47974D6529097BA300968DE9 /* iOSSettingsView.swift */,
+				47105055291169F9009AAA3C /* StoreKitConfiguration.storekit */,
+				4710505729116A43009AAA3C /* StoreKitTestCertificate.cer */,
+				4710505129116830009AAA3C /* PurchaseManager.swift */,
+				47974D73290980F700968DE9 /* Preview Content */,
+			);
+			path = DeeplinkBuddyMobile;
+			sourceTree = "<group>";
+		};
+		47974D73290980F700968DE9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				47974D74290980F700968DE9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47974D822909818E00968DE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				47FAC43728D217D500972E4D /* Persistence.swift */,
+				47FAC43528D217D500972E4D /* DeeplinkBuddyApp.swift */,
+				47FAC44928D2183A00972E4D /* DeeplinkDetailView.swift */,
+				47FAC43C28D217D500972E4D /* AllDeeplinksView.swift */,
+				47B7A05128DB408800D49223 /* QueryItemsView.swift */,
+				47B7A05328DB4ACD00D49223 /* SchemeAndHostView.swift */,
+				4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */,
+				47BA90282936EC4C00CE9A86 /* QRCodeGenerator.swift */,
+				47A1CDC62959646700169E54 /* AnalyticsTracker.swift */,
+				47FAC43928D217D500972E4D /* DeeplinkBuddy.xcdatamodeld */,
+				47FAC43E28D217D600972E4D /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		47F3A638297B8BAA00CDFA1C /* DeeplinkBuddyMacAppStore */ = {
+			isa = PBXGroup;
+			children = (
+				47F3A65C297B985D00CDFA1C /* Info.plist */,
+				47F3A642297B8BAB00CDFA1C /* DeeplinkBuddyMacAppStore.entitlements */,
+				47F3A63F297B8BAB00CDFA1C /* Preview Content */,
+				47F3A65A297B922100CDFA1C /* XcodeManager.swift */,
+				47F3A65D297B9AB800CDFA1C /* OnboardingView.swift */,
+			);
+			path = DeeplinkBuddyMacAppStore;
+			sourceTree = "<group>";
+		};
+		47F3A63F297B8BAB00CDFA1C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				47F3A640297B8BAB00CDFA1C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47F3A655297B8CB000CDFA1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47FAC42928D217D500972E4D = {
+			isa = PBXGroup;
+			children = (
+				47974D822909818E00968DE9 /* Shared */,
+				47FAC43428D217D500972E4D /* DeeplinkBuddy */,
+				47974D6C290980F600968DE9 /* DeeplinkBuddyMobile */,
+				47F3A638297B8BAA00CDFA1C /* DeeplinkBuddyMacAppStore */,
+				47FAC43328D217D500972E4D /* Products */,
+				47F3A655297B8CB000CDFA1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47FAC43328D217D500972E4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47FAC43228D217D500972E4D /* Deeplink Buddy.app */,
+				47974D6B290980F600968DE9 /* DeeplinkBuddyMobile.app */,
+				47F3A637297B8BAA00CDFA1C /* Deeplink Buddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47FAC43428D217D500972E4D /* DeeplinkBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				4766C5F028D2293400EBEEA1 /* Info.plist */,
+				47AD61E228EF44310054F38C /* MenuBarManager.swift */,
+				47C8E89B28E46C31008DCCC9 /* PreferencesView.swift */,
+				4762F23A28EC4D5B007251C6 /* TargetDeviceView.swift */,
+				47C8E89928E4631F008DCCC9 /* CheckForUpdatesView.swift */,
+				4762F23828EC4A12007251C6 /* SimulatorManager.swift */,
+				47FAC44028D217D600972E4D /* DeeplinkBuddy.entitlements */,
+				47FAC44128D217D600972E4D /* Preview Content */,
+			);
+			path = DeeplinkBuddy;
+			sourceTree = "<group>";
+		};
+		47FAC44128D217D600972E4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				47FAC44228D217D600972E4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47974D6A290980F600968DE9 /* DeeplinkBuddyMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47974D76290980F700968DE9 /* Build configuration list for PBXNativeTarget "DeeplinkBuddyMobile" */;
+			buildPhases = (
+				47974D67290980F600968DE9 /* Sources */,
+				47974D68290980F600968DE9 /* Frameworks */,
+				47974D69290980F600968DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeeplinkBuddyMobile;
+			packageProductDependencies = (
+				4710504F291167CD009AAA3C /* RevenueCat */,
+			);
+			productName = DeeplinkBuddyMobile;
+			productReference = 47974D6B290980F600968DE9 /* DeeplinkBuddyMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47F3A636297B8BAA00CDFA1C /* DeeplinkBuddyMacAppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47F3A643297B8BAB00CDFA1C /* Build configuration list for PBXNativeTarget "DeeplinkBuddyMacAppStore" */;
+			buildPhases = (
+				47F3A633297B8BAA00CDFA1C /* Sources */,
+				47F3A634297B8BAA00CDFA1C /* Frameworks */,
+				47F3A635297B8BAA00CDFA1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeeplinkBuddyMacAppStore;
+			packageProductDependencies = (
+				47F3A656297B8CB000CDFA1C /* Mixpanel */,
+				47F3A658297B8CB400CDFA1C /* TelemetryClient */,
+			);
+			productName = DeeplinkBuddyMacAppStore;
+			productReference = 47F3A637297B8BAA00CDFA1C /* Deeplink Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47FAC43128D217D500972E4D /* DeeplinkBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FAC44628D217D600972E4D /* Build configuration list for PBXNativeTarget "DeeplinkBuddy" */;
+			buildPhases = (
+				47FAC42E28D217D500972E4D /* Sources */,
+				47FAC42F28D217D500972E4D /* Frameworks */,
+				47FAC43028D217D500972E4D /* Resources */,
+				47F3A62F297B8B7F00CDFA1C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeeplinkBuddy;
+			packageProductDependencies = (
+				47974D7A2909814300968DE9 /* Sparkle */,
+				47A1CDC42959622D00169E54 /* Mixpanel */,
+				47F6C6122976E06E00EAFC3B /* TelemetryClient */,
+			);
+			productName = DeeplinkBuddy;
+			productReference = 47FAC43228D217D500972E4D /* Deeplink Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47FAC42A28D217D500972E4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					47974D6A290980F600968DE9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					47F3A636297B8BAA00CDFA1C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					47FAC43128D217D500972E4D = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 47FAC42D28D217D500972E4D /* Build configuration list for PBXProject "DeeplinkBuddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47FAC42928D217D500972E4D;
+			packageReferences = (
+				47974D792909814300968DE9 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				4710504E291167CD009AAA3C /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+				47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */,
+			);
+			productRefGroup = 47FAC43328D217D500972E4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47FAC43128D217D500972E4D /* DeeplinkBuddy */,
+				47974D6A290980F600968DE9 /* DeeplinkBuddyMobile */,
+				47F3A636297B8BAA00CDFA1C /* DeeplinkBuddyMacAppStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47974D69290980F600968DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4710505629116A01009AAA3C /* StoreKitConfiguration.storekit in Resources */,
+				47974D75290980F700968DE9 /* Preview Assets.xcassets in Resources */,
+				47974D83290981AA00968DE9 /* Assets.xcassets in Resources */,
+				4710505829116A43009AAA3C /* StoreKitTestCertificate.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F3A635297B8BAA00CDFA1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F3A641297B8BAB00CDFA1C /* Preview Assets.xcassets in Resources */,
+				47F3A646297B8BBB00CDFA1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FAC43028D217D500972E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FAC44328D217D600972E4D /* Preview Assets.xcassets in Resources */,
+				47FAC43F28D217D600972E4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47974D67290980F600968DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47974D85290981CD00968DE9 /* AllDeeplinksView.swift in Sources */,
+				47BA902A2936EC4C00CE9A86 /* QRCodeGenerator.swift in Sources */,
+				47974D8A290981E100968DE9 /* SchemeAndHostView.swift in Sources */,
+				47974D7C2909814F00968DE9 /* iOSContentView.swift in Sources */,
+				47974D89290981DF00968DE9 /* QueryItemsView.swift in Sources */,
+				47974D7D2909814F00968DE9 /* iOSSettingsView.swift in Sources */,
+				47974D8B290981E300968DE9 /* Deeplink.swift in Sources */,
+				4710505229116830009AAA3C /* PurchaseManager.swift in Sources */,
+				47974D84290981B300968DE9 /* DeeplinkBuddy.xcdatamodeld in Sources */,
+				47974D88290981DC00968DE9 /* DeeplinkDetailView.swift in Sources */,
+				47974D87290981D900968DE9 /* DeeplinkBuddyApp.swift in Sources */,
+				47A1CDC82959646700169E54 /* AnalyticsTracker.swift in Sources */,
+				47974D86290981D700968DE9 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F3A633297B8BAA00CDFA1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F3A64A297B8BF200CDFA1C /* AllDeeplinksView.swift in Sources */,
+				47F3A652297B8C0F00CDFA1C /* PreferencesView.swift in Sources */,
+				47F3A64C297B8BF700CDFA1C /* SchemeAndHostView.swift in Sources */,
+				47F3A65B297B922100CDFA1C /* XcodeManager.swift in Sources */,
+				47F3A653297B8C1100CDFA1C /* TargetDeviceView.swift in Sources */,
+				47F3A650297B8C0300CDFA1C /* DeeplinkBuddy.xcdatamodeld in Sources */,
+				47F3A651297B8C0C00CDFA1C /* MenuBarManager.swift in Sources */,
+				47F3A64D297B8BF900CDFA1C /* Deeplink.swift in Sources */,
+				47F3A648297B8BED00CDFA1C /* DeeplinkBuddyApp.swift in Sources */,
+				47F3A64B297B8BF400CDFA1C /* QueryItemsView.swift in Sources */,
+				47F3A64E297B8BFC00CDFA1C /* QRCodeGenerator.swift in Sources */,
+				47F3A647297B8BE700CDFA1C /* Persistence.swift in Sources */,
+				47F3A64F297B8BFF00CDFA1C /* AnalyticsTracker.swift in Sources */,
+				47F3A65E297B9AB800CDFA1C /* OnboardingView.swift in Sources */,
+				47F3A654297B8C2700CDFA1C /* SimulatorManager.swift in Sources */,
+				47F3A649297B8BF000CDFA1C /* DeeplinkDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FAC42E28D217D500972E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FAC43628D217D500972E4D /* DeeplinkBuddyApp.swift in Sources */,
+				47B7A05228DB408800D49223 /* QueryItemsView.swift in Sources */,
+				47FAC44A28D2183A00972E4D /* DeeplinkDetailView.swift in Sources */,
+				4762F23B28EC4D5B007251C6 /* TargetDeviceView.swift in Sources */,
+				47B7A05428DB4ACD00D49223 /* SchemeAndHostView.swift in Sources */,
+				47FAC43828D217D500972E4D /* Persistence.swift in Sources */,
+				4762F23928EC4A12007251C6 /* SimulatorManager.swift in Sources */,
+				47C8E89C28E46C31008DCCC9 /* PreferencesView.swift in Sources */,
+				47C8E89A28E4631F008DCCC9 /* CheckForUpdatesView.swift in Sources */,
+				47FAC43D28D217D500972E4D /* AllDeeplinksView.swift in Sources */,
+				47AD61E328EF44310054F38C /* MenuBarManager.swift in Sources */,
+				47FAC43B28D217D500972E4D /* DeeplinkBuddy.xcdatamodeld in Sources */,
+				4766C5EF28D21A9200EBEEA1 /* Deeplink.swift in Sources */,
+				47A1CDC72959646700169E54 /* AnalyticsTracker.swift in Sources */,
+				47BA90292936EC4C00CE9A86 /* QRCodeGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47974D77290980F700968DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddyMobile/DeeplinkBuddyMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47974D78290980F700968DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddyMobile/DeeplinkBuddyMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47F3A644297B8BAB00CDFA1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddyMacAppStore/DeeplinkBuddyMacAppStore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMacAppStore/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeeplinkBuddyMacAppStore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
+				PRODUCT_NAME = "Deeplink Buddy";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STORE";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		47F3A645297B8BAB00CDFA1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddyMacAppStore/DeeplinkBuddyMacAppStore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMacAppStore/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeeplinkBuddyMacAppStore/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
+				PRODUCT_NAME = "Deeplink Buddy";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STORE;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		47FAC44428D217D600972E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Debug;
+		};
+		47FAC44528D217D600972E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+			};
+			name = Release;
+		};
+		47FAC44728D217D600972E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddy/DeeplinkBuddy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeeplinkBuddy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
+				PRODUCT_NAME = "Deeplink Buddy";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		47FAC44828D217D600972E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddy/DeeplinkBuddy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeeplinkBuddy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
+				PRODUCT_NAME = "Deeplink Buddy";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47974D76290980F700968DE9 /* Build configuration list for PBXNativeTarget "DeeplinkBuddyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47974D77290980F700968DE9 /* Debug */,
+				47974D78290980F700968DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47F3A643297B8BAB00CDFA1C /* Build configuration list for PBXNativeTarget "DeeplinkBuddyMacAppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F3A644297B8BAB00CDFA1C /* Debug */,
+				47F3A645297B8BAB00CDFA1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FAC42D28D217D500972E4D /* Build configuration list for PBXProject "DeeplinkBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FAC44428D217D600972E4D /* Debug */,
+				47FAC44528D217D600972E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FAC44628D217D600972E4D /* Build configuration list for PBXNativeTarget "DeeplinkBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FAC44728D217D600972E4D /* Debug */,
+				47FAC44828D217D600972E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4710504E291167CD009AAA3C /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.13.4;
+			};
+		};
+		47974D792909814300968DE9 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
+		47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
+			};
+		};
+		47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TelemetryDeck/SwiftClient";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4710504F291167CD009AAA3C /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4710504E291167CD009AAA3C /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		47974D7A2909814300968DE9 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47974D792909814300968DE9 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		47A1CDC42959622D00169E54 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		47F3A656297B8CB000CDFA1C /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		47F3A658297B8CB400CDFA1C /* TelemetryClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */;
+			productName = TelemetryClient;
+		};
+		47F6C6122976E06E00EAFC3B /* TelemetryClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */;
+			productName = TelemetryClient;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		47FAC43928D217D500972E4D /* DeeplinkBuddy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47FAC43A28D217D500972E4D /* DeeplinkBuddy.xcdatamodel */,
+			);
+			currentVersion = 47FAC43A28D217D500972E4D /* DeeplinkBuddy.xcdatamodel */;
+			path = DeeplinkBuddy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 47FAC42A28D217D500972E4D /* Project object */;
+}

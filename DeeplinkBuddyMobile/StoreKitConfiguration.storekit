@@ -1,0 +1,63 @@
+{
+  "identifier" : "C308EA8A",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "163C933D",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Snack-sized tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "snack.tip",
+      "referenceName" : "Snack tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "30AABF4E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Coffee-sized tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "coffee.tip",
+      "referenceName" : "Coffee tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "5.99",
+      "familyShareable" : false,
+      "internalID" : "85E51D6B",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Lunch-sized tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "lunch.tip",
+      "referenceName" : "Lunch tip",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
