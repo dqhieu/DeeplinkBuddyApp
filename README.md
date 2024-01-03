@@ -20,4 +20,4 @@
  - Run the app in Xcode.
 
 # Contact
-- **Twitter**: https://twitter.com/dqhieu
+- **Twitter**: https://twitter.com/hieudinh_
