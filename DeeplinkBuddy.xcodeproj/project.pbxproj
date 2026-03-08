@@ -15,7 +15,6 @@
 		4762F23B28EC4D5B007251C6 /* TargetDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23A28EC4D5B007251C6 /* TargetDeviceView.swift */; };
 		4766C5EF28D21A9200EBEEA1 /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */; };
 		47974D75290980F700968DE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47974D74290980F700968DE9 /* Preview Assets.xcassets */; };
-		47974D7B2909814300968DE9 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 47974D7A2909814300968DE9 /* Sparkle */; };
 		47974D7C2909814F00968DE9 /* iOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974D6329097B2D00968DE9 /* iOSContentView.swift */; };
 		47974D7D2909814F00968DE9 /* iOSSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47974D6529097BA300968DE9 /* iOSSettingsView.swift */; };
 		47974D83290981AA00968DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FAC43E28D217D600972E4D /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		47974D89290981DF00968DE9 /* QueryItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05128DB408800D49223 /* QueryItemsView.swift */; };
 		47974D8A290981E100968DE9 /* SchemeAndHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7A05328DB4ACD00D49223 /* SchemeAndHostView.swift */; };
 		47974D8B290981E300968DE9 /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766C5EE28D21A9200EBEEA1 /* Deeplink.swift */; };
-		47A1CDC52959622D00169E54 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 47A1CDC42959622D00169E54 /* Mixpanel */; };
 		47A1CDC72959646700169E54 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1CDC62959646700169E54 /* AnalyticsTracker.swift */; };
 		47A1CDC82959646700169E54 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1CDC62959646700169E54 /* AnalyticsTracker.swift */; };
 		47AD61E328EF44310054F38C /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD61E228EF44310054F38C /* MenuBarManager.swift */; };
@@ -53,11 +51,8 @@
 		47F3A652297B8C0F00CDFA1C /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C8E89B28E46C31008DCCC9 /* PreferencesView.swift */; };
 		47F3A653297B8C1100CDFA1C /* TargetDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23A28EC4D5B007251C6 /* TargetDeviceView.swift */; };
 		47F3A654297B8C2700CDFA1C /* SimulatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762F23828EC4A12007251C6 /* SimulatorManager.swift */; };
-		47F3A657297B8CB000CDFA1C /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 47F3A656297B8CB000CDFA1C /* Mixpanel */; };
-		47F3A659297B8CB400CDFA1C /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 47F3A658297B8CB400CDFA1C /* TelemetryClient */; };
 		47F3A65B297B922100CDFA1C /* XcodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3A65A297B922100CDFA1C /* XcodeManager.swift */; };
 		47F3A65E297B9AB800CDFA1C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3A65D297B9AB800CDFA1C /* OnboardingView.swift */; };
-		47F6C6132976E06E00EAFC3B /* TelemetryClient in Frameworks */ = {isa = PBXBuildFile; productRef = 47F6C6122976E06E00EAFC3B /* TelemetryClient */; };
 		47FAC43628D217D500972E4D /* DeeplinkBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43528D217D500972E4D /* DeeplinkBuddyApp.swift */; };
 		47FAC43828D217D500972E4D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43728D217D500972E4D /* Persistence.swift */; };
 		47FAC43B28D217D500972E4D /* DeeplinkBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47FAC43928D217D500972E4D /* DeeplinkBuddy.xcdatamodeld */; };
@@ -130,8 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F3A657297B8CB000CDFA1C /* Mixpanel in Frameworks */,
-				47F3A659297B8CB400CDFA1C /* TelemetryClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47A1CDC52959622D00169E54 /* Mixpanel in Frameworks */,
-				47F6C6132976E06E00EAFC3B /* TelemetryClient in Frameworks */,
-				47974D7B2909814300968DE9 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +287,6 @@
 			);
 			name = DeeplinkBuddyMacAppStore;
 			packageProductDependencies = (
-				47F3A656297B8CB000CDFA1C /* Mixpanel */,
-				47F3A658297B8CB400CDFA1C /* TelemetryClient */,
 			);
 			productName = DeeplinkBuddyMacAppStore;
 			productReference = 47F3A637297B8BAA00CDFA1C /* Deeplink Buddy.app */;
@@ -319,9 +307,6 @@
 			);
 			name = DeeplinkBuddy;
 			packageProductDependencies = (
-				47974D7A2909814300968DE9 /* Sparkle */,
-				47A1CDC42959622D00169E54 /* Mixpanel */,
-				47F6C6122976E06E00EAFC3B /* TelemetryClient */,
 			);
 			productName = DeeplinkBuddy;
 			productReference = 47FAC43228D217D500972E4D /* Deeplink Buddy.app */;
@@ -358,10 +343,7 @@
 			);
 			mainGroup = 47FAC42928D217D500972E4D;
 			packageReferences = (
-				47974D792909814300968DE9 /* XCRemoteSwiftPackageReference "Sparkle" */,
 				4710504E291167CD009AAA3C /* XCRemoteSwiftPackageReference "purchases-ios" */,
-				47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
-				47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */,
 			);
 			productRefGroup = 47FAC43328D217D500972E4D /* Products */;
 			projectDirPath = "";
@@ -484,7 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMobile/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH46VD9229;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
@@ -499,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -522,7 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMobile/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH46VD9229;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Deeplink Buddy";
@@ -537,7 +519,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -560,9 +542,9 @@
 				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddyMacAppStore/DeeplinkBuddyMacAppStore.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMacAppStore/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH46VD9229;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -575,7 +557,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
 				PRODUCT_NAME = "Deeplink Buddy";
 				SDKROOT = macosx;
@@ -594,9 +576,9 @@
 				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddyMacAppStore/DeeplinkBuddyMacAppStore.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddyMacAppStore/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH46VD9229;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -609,7 +591,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
 				PRODUCT_NAME = "Deeplink Buddy";
 				SDKROOT = macosx;
@@ -736,9 +718,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddy/DeeplinkBuddy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddy/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH46VD9229;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -761,7 +743,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
 				PRODUCT_NAME = "Deeplink Buddy";
 				SDKROOT = macosx;
@@ -781,9 +763,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DeeplinkBuddy/DeeplinkBuddy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"DeeplinkBuddy/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BH46VD9229;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -806,7 +788,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hieudinh.DeeplinkBuddy;
 				PRODUCT_NAME = "Deeplink Buddy";
 				SDKROOT = macosx;
@@ -864,32 +846,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = 4.13.4;
-			};
-		};
-		47974D792909814300968DE9 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = exactVersion;
-				version = 2.3.0;
-			};
-		};
-		47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
-			requirement = {
-				kind = exactVersion;
-				version = 4.0.4;
-			};
-		};
-		47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TelemetryDeck/SwiftClient";
-			requirement = {
-				kind = exactVersion;
-				version = 1.4.1;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -899,31 +857,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4710504E291167CD009AAA3C /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCat;
-		};
-		47974D7A2909814300968DE9 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47974D792909814300968DE9 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
-		};
-		47A1CDC42959622D00169E54 /* Mixpanel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
-			productName = Mixpanel;
-		};
-		47F3A656297B8CB000CDFA1C /* Mixpanel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47A1CDC32959622D00169E54 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
-			productName = Mixpanel;
-		};
-		47F3A658297B8CB400CDFA1C /* TelemetryClient */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */;
-			productName = TelemetryClient;
-		};
-		47F6C6122976E06E00EAFC3B /* TelemetryClient */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47F6C6112976E06E00EAFC3B /* XCRemoteSwiftPackageReference "SwiftClient" */;
-			productName = TelemetryClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 

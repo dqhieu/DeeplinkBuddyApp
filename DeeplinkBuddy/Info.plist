@@ -11,10 +11,6 @@
 			<array/>
 		</dict>
 	</array>
-	<key>SUFeedURL</key>
-	<string>Your_SUFeedURL</string>
-	<key>SUPublicEDKey</key>
-	<string>Your_SUPublicEDKey</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

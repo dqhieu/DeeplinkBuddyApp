@@ -62,33 +62,11 @@ struct iOSSettingsView: View {
             Button("OK", role: .cancel) { }
           }
         }
-
         Section {
-          if let url = URL(string: "https://deeplinkbuddy.com/") {
-            Link("💻 Deeplink Buddy for macOS", destination: url)
-          }
-        }
-
-        Section {
-          if let url = URL(string: "https://deeplinkbuddy.com/changelog?tab=ios") {
-            Button {
-              showChangeLog = true
-            } label: {
-              Text("📘 Changelog")
-            }
-            .fullScreenCover(isPresented: $showChangeLog, content: {
-              SFSafariViewWrapper(url: url)
-                .edgesIgnoringSafeArea(.all)
-            })
-          }
-          if let url = URL(string: "twitter://user?screen_name=dqhieu"), UIApplication.shared.canOpenURL(url) {
+          if let url = URL(string: "twitter://user?screen_name=hieudinh_"), UIApplication.shared.canOpenURL(url) {
             Link("👨🏻‍💻 Developer Twitter", destination: url)
-          } else if let url = URL(string: "https://twitter.com/dqhieu"), UIApplication.shared.canOpenURL(url) {
+          } else if let url = URL(string: "https://x.com/hieudinh_"), UIApplication.shared.canOpenURL(url) {
             Link("👨🏻‍💻 Developer Twitter", destination: url)
-          }
-          #warning("Change Support email")
-          if let url = URL(string: "mailto:youremail") {
-            Link("✉️ Send feedback", destination: url)
           }
           if let writeReviewURL = URL(string: "https://apps.apple.com/app/id6443472268?action=write-review") {
             Link("📝 Review on the App Store", destination: writeReviewURL)

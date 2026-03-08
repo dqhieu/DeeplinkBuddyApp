@@ -79,7 +79,9 @@ struct QueryItemView: View {
       // If the param is deleted while its textfield focused, the app will crash
       // so we have to call NSApp.keyWindow?.makeFirstResponder(nil) to resign as first responder
       DispatchQueue.main.async {
+        #if os(macOS)
         NSApp.keyWindow?.makeFirstResponder(nil)
+        #endif
         DispatchQueue.main.async {
           onDelete()
         }

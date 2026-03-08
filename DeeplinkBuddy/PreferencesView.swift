@@ -7,48 +7,15 @@
 
 #if os(macOS)
 import SwiftUI
-#if canImport(Sparkle)
-import Sparkle
-#endif
 
 struct PreferencesView: View {
-  #if !STORE
-  private let updater: SPUUpdater
-  @State private var automaticallyChecksForUpdates: Bool
-  @State private var automaticallyDownloadsUpdates: Bool
-  #endif
   @State private var showRelaunch = false
   @State private var iCloudSyncEnabledFirstValue: Bool = true
   @State private var feedback = ""
   @AppStorage("iCloudSyncEnabled") var iCloudSyncEnabled = true
 
-  #if !STORE
-  init(updater: SPUUpdater) {
-    self.updater = updater
-    self.automaticallyChecksForUpdates = updater.automaticallyChecksForUpdates
-    self.automaticallyDownloadsUpdates = updater.automaticallyDownloadsUpdates
-  }
-  #endif
-
   var body: some View {
     TabView {
-      #if !STORE
-      VStack {
-        Toggle("Automatically check for updates", isOn: $automaticallyChecksForUpdates)
-          .onChange(of: automaticallyChecksForUpdates) { newValue in
-            updater.automaticallyChecksForUpdates = newValue
-          }
-
-        Toggle("Automatically download updates", isOn: $automaticallyDownloadsUpdates)
-          .disabled(!automaticallyChecksForUpdates)
-          .onChange(of: automaticallyDownloadsUpdates) { newValue in
-            updater.automaticallyDownloadsUpdates = newValue
-          }
-      }
-      .tabItem {
-        Label("Updates", systemImage: "arrow.triangle.2.circlepath.circle")
-      }
-      #endif
       VStack {
         Toggle(isOn: $iCloudSyncEnabled) {
           VStack(alignment: .leading) {
@@ -83,7 +50,7 @@ struct PreferencesView: View {
         HStack {
           Text("Xcode path")
           TextField("", text: .constant(XcodeManager.shared.xcodeURL?.path ?? ""))
-            
+
           Button {
             XcodeManager.shared.askForXcode(completion: {})
           } label: {
@@ -124,10 +91,8 @@ struct PreferencesView: View {
 
           Spacer()
           Button {
-            #warning("Change your Twitter account ID")
-            let yourTwitterAccountID = ""
             if let fb = feedback.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed),
-               let url = URL(string: "https://twitter.com/messages/compose?recipient_id=\(yourTwitterAccountID)&text=\(fb)") {
+               let url = URL(string: "https://twitter.com/messages/compose?recipient_id=2808665022&text=\(fb)") {
               NSWorkspace.shared.open(url)
             }
           } label: {
@@ -135,8 +100,7 @@ struct PreferencesView: View {
           }
           Button {
             if let service = NSSharingService(named: NSSharingService.Name.composeEmail) {
-              #warning("Change Support email")
-              service.recipients = ["your_email"]
+              service.recipients = ["support@deeplinkbuddy.com"]
               service.subject = "Deeplink Buddy Feedback"
               service.perform(withItems: [feedback])
             }
@@ -162,9 +126,6 @@ struct PreferencesView: View {
           .font(.callout)
         Text("© 2023 Dinh Quang Hieu")
           .font(.callout)
-        if let url = URL(string: "https://deeplinkbuddy.com") {
-          Link("deeplinkbuddy.com", destination: url)
-        }
       }
       .padding(.bottom)
       .tabItem {

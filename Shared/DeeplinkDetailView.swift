@@ -8,7 +8,6 @@
 import SwiftUI
 import CoreData
 import Foundation
-import Mixpanel
 
 struct DeeplinkDetailView: View {
 
@@ -172,9 +171,11 @@ struct DeeplinkDetailView: View {
                       .help(areAllParamsDiabled ? "Enable all params" : "Disable all params")
                   }
                   Button {
+                    #if os(macOS)
                     DispatchQueue.main.async {
                       NSApp.keyWindow?.makeFirstResponder(nil)
                     }
+                    #endif
                     showingDeleteParamAert.toggle()
                   } label: {
                     Text("Remove all params")
@@ -187,7 +188,9 @@ struct DeeplinkDetailView: View {
                       message: Text("This action cannot be undone"),
                       primaryButton: .destructive(Text("Yes")) {
                         DispatchQueue.main.async {
+                          #if os(macOS)
                           NSApp.keyWindow?.makeFirstResponder(nil)
+                          #endif
                           DispatchQueue.main.async {
                             Tracker.removeAllParams(count: urlComponents?.queryItems?.count ?? 0)
                             urlComponents?.queryItems?.removeAll()
@@ -267,20 +270,16 @@ struct DeeplinkDetailView: View {
           }
           .help("Show QR code")
           .popover(isPresented: $showQRCode) {
-            if let image = QRCodeGenerator().generateQR(
+            let image = QRCodeGenerator().generateQR(
               codeString: deeplinkValue,
               backgroundColor: CIColor.white,
               foregroundColor: CIColor.black
-            ) {
-              Image(nsImage: image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 300, height: 300)
-                .padding()
-            } else {
-              Text("Failed to generate QR code, please try again")
-                .padding()
-            }
+            )
+            Image(nsImage: image)
+              .resizable()
+              .scaledToFit()
+              .frame(width: 300, height: 300)
+              .padding()
           }
           .popover(isPresented: $showQRCodeTooltip, arrowEdge: .bottom) {
             Text("You can generate a QR code from the deeplink by tapping this button")
